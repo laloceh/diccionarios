@@ -96,7 +96,7 @@ public class Diccionarios {
             System.out.println("Clave: " + key + " -> Valor: " + linkedHashMap.get(key));
         }
         
-        
+        System.out.println("Llamamos a algunas de las funciones");
         
     }  //main
     
