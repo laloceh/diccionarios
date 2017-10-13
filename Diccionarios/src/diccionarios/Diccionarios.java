@@ -11,6 +11,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.TreeMap;
 
 /**
@@ -151,9 +152,14 @@ public class Diccionarios {
         similarities.put(1, value1);
         
         double[] value2 = {3, 0.46};
-        similarities.put(2, value2);
+        similarities.put(3, value2);
         
-        
+        for (Entry<Integer, double[]> user : similarities.entrySet()) {
+            Integer user_id = user.getKey();
+            double[] valor = user.getValue();
+            System.out.println(user_id + " -> " + (int)valor[0] + "," + valor[1]);
+        }
+
         
     }  //main
     
