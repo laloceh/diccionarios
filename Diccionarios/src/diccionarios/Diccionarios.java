@@ -7,6 +7,7 @@ package diccionarios;
 
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -71,7 +72,29 @@ public class Diccionarios {
             
         }
         
+        System.out.println("");
+        System.out.println("~~~~LINKEDHASHMAP~~~~");
+        //Uso de LinkedHashMap
+        Map<Integer,String> linkedHashMap = new LinkedHashMap<>();
+        linkedHashMap.put(1, "Casillas");
+        linkedHashMap.put(3, "Pique");
+        linkedHashMap.put(11, "Capdevila");
+        linkedHashMap.put(16, "Busquets");
+        linkedHashMap.put(18, "Pedrito");
+        linkedHashMap.put(7, "Vila");
+        linkedHashMap.put(15, "Ramos");
+        linkedHashMap.put(5, "Puyol");
+        linkedHashMap.put(5, "Xabi Alonso");
+        linkedHashMap.put(8, "Xavi Hernandez");
+        linkedHashMap.put(6, "Iniesta");
         
+        //Imprimimos el Map con un iterador
+        it = linkedHashMap.keySet().iterator();
+        while(it.hasNext())
+        {
+            Integer key = (int)it.next();
+            System.out.println("Clave: " + key + " -> Valor: " + linkedHashMap.get(key));
+        }
         
         
         
