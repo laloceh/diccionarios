@@ -6,6 +6,7 @@
 package diccionarios;
 
 import java.util.Map;
+import java.util.Map.Entry;
 
 /**
  *
@@ -30,6 +31,18 @@ public class Funciones {
         System.out.println("Lo comprobamos tambien viendo si esta vacio: treeMap.isEmpty() = " + treeMap.isEmpty());
         
     }
+    
+    public static void ImprimeAsArray(Map<Integer,String> treeMap)
+    {
+        System.out.println("Foreach: Forma alternativa para recorrer los Map mostrando la Clave y el Valor: ");
+        for (Entry<Integer,String> jugador : treeMap.entrySet()) {
+            Integer clave = jugador.getKey();
+            String valor = jugador.getValue();
+            System.out.println(clave + " -> " + valor);
+        }
+        
+    }
+    
     
 } //END
 
