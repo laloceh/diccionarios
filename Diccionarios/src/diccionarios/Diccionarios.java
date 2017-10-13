@@ -127,6 +127,21 @@ public class Diccionarios {
         //Imprimimos
         Funciones.ImprimeAsArrayJugadorSeleccion(jugadores);
         
+        
+        //Checa si un objeto esta en el map
+        System.out.println("");
+        //Creamos un nuevo objeto
+        JugadorSeleccion villa = new JugadorSeleccion(7, "Villa", "Delantero");
+        //checo si se encuentra "ESTE OBJETO" en el map
+        Funciones.ComparaObjetosMap(villa, jugadores);
+        
+        //En cambio esto si funcionaria
+        System.out.println("");
+        JugadorSeleccion navas = new JugadorSeleccion(22, "Navas", "Extremo Derecho");
+        jugadores.put("Navas", navas);
+        Funciones.ComparaObjetosMap(navas, jugadores);
+        
+        
     }  //main
     
 }
