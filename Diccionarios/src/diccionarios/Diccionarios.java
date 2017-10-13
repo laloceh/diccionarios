@@ -144,6 +144,17 @@ public class Diccionarios {
         Funciones.ComparaObjetosMap(navas, jugadores);
         
         
+        //A partir de aca esta en el branch de Pruebas
+        
+        Map<Integer, double[]> similarities = new TreeMap<>();
+        double[] value1 = {2, 0.56};
+        similarities.put(1, value1);
+        
+        double[] value2 = {3, 0.46};
+        similarities.put(2, value2);
+        
+        
+        
     }  //main
     
 }
