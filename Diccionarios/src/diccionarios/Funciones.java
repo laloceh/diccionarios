@@ -58,8 +58,8 @@ public class Funciones {
     {
         
         String nombre = jugador.getNombre();
-        System.out.format("Esta enste objeto '%s' en el Map: map.containsValue('%s')", nombre, nombre);
-        System.out.println(" = " + map.containsValue(nombre));
+        System.out.format("Esta este objeto '%s' en el Map: map.containsValue('%s')", nombre, nombre);
+        System.out.println(" = " + map.containsValue(jugador));
     }
     
     
