@@ -32,10 +32,10 @@ public class Funciones {
         
     }
     
-    public static void ImprimeAsArray(Map<Integer,String> treeMap)
+    public static void ImprimeAsArray(Map<Integer,String> map)
     {
         System.out.println("Foreach: Forma alternativa para recorrer los Map mostrando la Clave y el Valor: ");
-        for (Entry<Integer,String> jugador : treeMap.entrySet()) {
+        for (Entry<Integer,String> jugador : map.entrySet()) {
             Integer clave = jugador.getKey();
             String valor = jugador.getValue();
             System.out.println(clave + " -> " + valor);
