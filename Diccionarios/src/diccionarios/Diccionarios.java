@@ -31,7 +31,7 @@ public class Diccionarios {
         map.put(11, "Capdevila");
         map.put(16, "Busquets");
         map.put(18, "Pedrito");
-        map.put(7, "Vila");
+        map.put(7, "Villa");
         map.put(15, "Ramos");
         map.put(5, "Puyol");
         map.put(5, "Xabi Alonso");
@@ -56,7 +56,7 @@ public class Diccionarios {
         treeMap.put(11, "Capdevila");
         treeMap.put(16, "Busquets");
         treeMap.put(18, "Pedrito");
-        treeMap.put(7, "Vila");
+        treeMap.put(7, "Villa");
         treeMap.put(15, "Ramos");
         treeMap.put(5, "Puyol");
         treeMap.put(5, "Xabi Alonso");
@@ -81,7 +81,7 @@ public class Diccionarios {
         linkedHashMap.put(11, "Capdevila");
         linkedHashMap.put(16, "Busquets");
         linkedHashMap.put(18, "Pedrito");
-        linkedHashMap.put(7, "Vila");
+        linkedHashMap.put(7, "Villa");
         linkedHashMap.put(15, "Ramos");
         linkedHashMap.put(5, "Puyol");
         linkedHashMap.put(5, "Xabi Alonso");
@@ -96,7 +96,10 @@ public class Diccionarios {
             System.out.println("Clave: " + key + " -> Valor: " + linkedHashMap.get(key));
         }
         
+        System.out.println("");
         System.out.println("Llamamos a algunas de las funciones");
+        Funciones.ImprimeMetodos(treeMap);
+        
         
     }  //main
     
