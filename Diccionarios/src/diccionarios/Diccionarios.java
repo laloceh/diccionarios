@@ -154,6 +154,8 @@ public class Diccionarios {
         double[] value2 = {3, 0.46};
         similarities.put(3, value2);
         
+        System.out.println("");
+        System.out.println("Prueba para buscar en un Map que tiene un array");
         for (Entry<Integer, double[]> user : similarities.entrySet()) {
             Integer user_id = user.getKey();
             double[] valor = user.getValue();
