@@ -54,5 +54,14 @@ public class Funciones {
     }
     
     
+    public static void ComparaObjetosMap(JugadorSeleccion jugador, Map<String,JugadorSeleccion> map)
+    {
+        
+        String nombre = jugador.getNombre();
+        System.out.format("Esta enste objeto '%s' en el Map: map.containsValue('%s')", nombre, nombre);
+        System.out.println(" = " + map.containsValue(nombre));
+    }
+    
+    
 } //END
 
