@@ -8,6 +8,7 @@ package diccionarios;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.TreeMap;
 
 /**
  *
@@ -21,6 +22,7 @@ public class Diccionarios {
     public static void main(String[] args) {
         // TODO code application logic here
         
+        System.out.println("~~~~HASHMAP~~~~");
         //Uso de HashMap
         Map<Integer, String> map = new HashMap<>();
         map.put(1, "Casillas");
@@ -43,6 +45,33 @@ public class Diccionarios {
             System.out.println("Clave: " + key + " -> Valor: " + map.get(key));
             
         }
+        
+        System.out.println("");
+        System.out.println("~~~~TREEHMAP~~~~");
+        //Uso de TreeMap
+        Map<Integer, String> treeMap = new TreeMap<>();
+        treeMap.put(1, "Casillas");
+        treeMap.put(3, "Pique");
+        treeMap.put(11, "Capdevila");
+        treeMap.put(16, "Busquets");
+        treeMap.put(18, "Pedrito");
+        treeMap.put(7, "Vila");
+        treeMap.put(15, "Ramos");
+        treeMap.put(5, "Puyol");
+        treeMap.put(5, "Xabi Alonso");
+        treeMap.put(8, "Xavi Hernandez");
+        treeMap.put(6, "Iniesta");
+        
+        //Imprimimos el Map con un iterador
+        it = treeMap.keySet().iterator();
+        while(it.hasNext())
+        {
+            Integer key = (int)it.next();
+            System.out.println("Clave: " + key + " -> Valor: " + treeMap.get(key));
+            
+        }
+        
+        
         
         
         
