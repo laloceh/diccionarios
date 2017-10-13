@@ -96,10 +96,15 @@ public class Diccionarios {
             System.out.println("Clave: " + key + " -> Valor: " + linkedHashMap.get(key));
         }
         
+        //Imprimimos los metodos
         System.out.println("");
         System.out.println("Llamamos a algunas de las funciones");
         Funciones.ImprimeMetodos(treeMap);
         
+        
+        //Imprimimos como Array
+        System.out.println("");
+        Funciones.ImprimeAsArray(linkedHashMap);
         
     }  //main
     
