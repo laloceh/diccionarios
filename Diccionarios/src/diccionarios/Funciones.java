@@ -39,6 +39,16 @@ public class Funciones {
             Integer clave = jugador.getKey();
             String valor = jugador.getValue();
             System.out.println(clave + " -> " + valor);
+        } 
+    }
+    
+    public static void ImprimeAsArrayJugadorSeleccion(Map<String,JugadorSeleccion> map)
+    {
+        System.out.println("Foreach: Forma alternativa para recorrer los Map mostrando la Clave y el Valor: ");
+        for (Entry<String,JugadorSeleccion> jugador : map.entrySet()) {
+            String clave = jugador.getKey();
+            JugadorSeleccion valor = jugador.getValue();
+            System.out.println(clave + " -> " + valor);
         }
         
     }
