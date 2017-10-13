@@ -11,7 +11,7 @@ package diccionarios;
  */
 public class JugadorSeleccion {
     
-    private int dorsal;
+        private int dorsal;
 	private String nombre;
 	private String demarcacion;
 
