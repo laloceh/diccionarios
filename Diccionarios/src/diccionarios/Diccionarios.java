@@ -22,7 +22,7 @@ public class Diccionarios {
         // TODO code application logic here
         
         //Uso de HashMap
-        Map<Integer, String> map = new HashMap<Integer, String>();
+        Map<Integer, String> map = new HashMap<>();
         map.put(1, "Casillas");
         map.put(3, "Pique");
         map.put(11, "Capdevila");
